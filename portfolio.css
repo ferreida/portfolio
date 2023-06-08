@@ -1,0 +1,348 @@
+/*CSS des élément principaux de chaque page*/
+html {
+  min-height: 100vw;
+  margin-left: -0.5vw;
+}
+main {
+  display: flex;
+  flex-grow: 1;
+  gap: 5vw;
+  color: black;
+  background-color: rgb(228, 234, 239);
+  min-width: 100vw;
+  min-height: 110vw;
+  position: relative;
+}
+
+header {
+  background-color: rgb(15, 83, 142);
+
+}
+
+body {
+  font-family: monospace;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vw;
+  min-width: 100vw;
+  background-color: rgb(15, 83, 142);
+  margin-bottom: -0.5vw;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+footer {
+  position: absolute;
+  left: 28vw;
+  margin-top: 110vw;
+  min-width: 72vw;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav {
+  border-bottom: 0.3vw white solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.navigation {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+.navigation:hover {
+  color: rgb(0, 0, 0);
+}
+#actif {
+  background-color: rgb(196, 221, 240);
+  border-radius: 0.2vw;
+  color: rgb(15, 83, 142);
+  text-decoration: none;
+  font-size: 1.5vw;
+  padding-top: 1vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+#actif:hover {
+  background-color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.profil {
+  background-color: rgb(196, 221, 240);
+  font-size: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 28vw;
+}
+main > aside > ul {
+  margin-left: 2vw;
+}
+.pp {
+  display: block;
+  height: 18vw;
+  width: 19vw;
+  border-radius: 0.2vw;
+}
+
+#langues {
+  width: 20vw;
+  height: 0.5vw;
+}
+
+#line {
+  border-left: 0.2vw rgb(196, 221, 240) solid;
+  margin-left: -4.5vw;
+}
+.ligne-top {
+  border-top: 0.1vw rgb(0, 0, 0) solid;
+}
+
+.reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+}
+.reseau {
+  color:  rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5vw;
+}
+
+aside {
+  display: flex;
+  flex-basis: 0.1vw;
+  flex-direction: column;
+}
+
+
+
+
+/*CSS des éléments de la page Mes projets*/
+.projet {
+  margin-top: 5vw;
+}
+.under-title {
+  border-top: 0.1vw rgb(255, 255, 255) solid;
+}
+.projets {
+  display: flex;
+  flex-direction: row;
+}
+.image-container {
+  position: relative;
+  width: 25vw;
+  margin-left: 5vw;
+  margin-top: 10vw;
+}
+.image-container:hover .textlinux {
+  opacity: 1;
+}
+.image-container:hover .imglinux {
+  filter: brightness(25%);
+}
+.image-container:hover .textaccenture {
+  opacity: 1;
+}
+.image-container:hover .imgaccenture {
+  filter: brightness(25%);
+}
+.image-container:hover .textbde {
+  opacity: 1;
+}
+.image-container:hover .imgbde {
+  filter: brightness(25%);
+}
+.image-container:hover .texttitanic {
+  opacity: 1;
+}
+.image-container:hover .imgtitanic {
+  filter: brightness(25%);
+}
+.image-container:hover .textdepeche {
+  opacity: 1;
+}
+.image-container:hover .imgdepeche {
+  filter: brightness(25%);
+}
+
+.imgprojets {
+  height: 20vw;
+  width: 35vw;
+  display: block;
+  margin: auto;
+}
+
+.textprojets {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+.backprojets {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: rgb(15, 83, 142) 0.2vw solid;
+  background-color: rgb(196, 221, 240);
+  border-radius: 0.5vw;
+  margin-left: 18.5vw;
+  font-size: 1.5vw;
+}
+
+.imglinux {
+  border-radius: 0.2vw;
+  min-height: 20vw;
+  width: 25vw;
+  transition: all 1s;
+}
+.textlinux {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  transition: all 1s;
+  width: 25vw;
+}
+
+.imgaccenture {
+  border-radius: 0.2vw;
+  height: 20vw;
+  width: 25vw;
+  transition: all 1s;
+}
+.textaccenture {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  transition: all 1s;
+  width: 25vw;
+}
+
+.imgtitanic {
+  border-radius: 0.2vw;
+  height: 20vw;
+  width: 25vw;
+  transition: all 1s;
+}
+.texttitanic {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  transition: all 1s;
+  width: 25vw;
+}
+
+.imgbde {
+  border-radius: 0.2vw;
+  height: 20vw;
+  width: 25vw;
+  transition: all 1s;
+}
+.textbde {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  transition: all 1s;
+  width: 25vw;
+}
+.logobde {
+  display: block;
+  margin: auto;
+  height: 20vw;
+  width: 20vw;
+}
+.imginstabde {
+  display: block;
+  margin: auto;
+  padding-top: 5vw;
+  height: 15vw;
+  width: 15vw;
+}
+
+#futurprojet {
+  opacity: 0;
+}
+.textdepeche {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  text-align: center;
+  transition: all 1s;
+  width: 25vw;
+}
+.imgdepeche {
+  border-radius: 0.2vw;
+  height: 20vw;
+  width: 25vw;
+  transition: all 1s;
+  margin-bottom: 7vw;
+}
+
+
+
+/*CSS des éléements de la page Accueil*/
+.main-accueil {
+  gap: 5vw;
+}
+
+div {
+  background-color: white;
+  min-height: 15vw; 
+  min-width: 27vw;
+  margin-top: 5vw;
+  border-radius: 0.2vw;
+  margin-bottom: none;
+}
+
+.accueil {
+  display: flex;
+  flex-direction: column;
+}
+
+.titres {
+  margin-left: 1vw;
+}
+.soustitre {
+  margin-left: 1.5vw;
+}
+.space {
+  margin-left: 2vw;
+  padding-right: 2vw;
+}
+.skills {
+  padding-top: 0.5vw;
+  height: 37vw;
+  background-image: url("img/test.png");
+  background-size: 27vw 38vw;
+}
+.experiences {
+  margin-top: 40vw;
+  padding-top: 0.5vw;
+  background-image: url("img/test.png");
+  background-size: cover;
+}
+.diplomes {
+  padding-top: 0.5vw;
+  margin-top: 21vw;
+  background-image: url("img/test.png");
+  background-size: 27vw 16vw;
+}
